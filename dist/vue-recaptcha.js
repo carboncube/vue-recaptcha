@@ -84,7 +84,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/home/snow/Desktop/Project/vue-recaptcha/src/recaptcha.vue"
+	  var id = "/Users/samuel/Dropbox/生產力青創-52-2016-PIS-IST/vue-recaptcha/src/recaptcha.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -113,6 +113,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// </template>
 	//
 	// <script>
+
 
 	exports.default = {
 	  props: {
@@ -222,7 +223,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  assertRecaptchaLoad();
-	  getRecaptcha.then(function (recaptcha) {
+	  getRecaptcha().then(function (recaptcha) {
 	    recaptcha.reset.apply(null, args);
 	  });
 	}

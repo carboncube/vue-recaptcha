@@ -49,7 +49,7 @@ export function reset(widgetId) {
   }
 
   assertRecaptchaLoad();
-  getRecaptcha.then((recaptcha) => {
+  getRecaptcha().then((recaptcha) => {
     recaptcha.reset.apply(null, args);
   });
 }
